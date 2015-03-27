@@ -9,8 +9,8 @@
     /////////////////////////////////////////////
     var socket = null;
     var isopen = false;
-    var IP = "192.168.1.100"
-    var PORT = "9000"
+    var IP = "192.168.1.100";
+    var PORT = "9000";
     window.onload = function() {
         socket = new WebSocket("ws://"+ IP +":" + PORT);
         socket.binaryType = "arraybuffer";
