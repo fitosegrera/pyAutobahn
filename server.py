@@ -1,6 +1,7 @@
 from twisted.python import log
 from twisted.internet import reactor
 from autobahn.twisted.websocket import WebSocketServerProtocol, WebSocketServerFactory
+import sys
 
 class MyServerProtocol(WebSocketServerProtocol):
 
