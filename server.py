@@ -1,8 +1,6 @@
-import sys
 from twisted.python import log
 from twisted.internet import reactor
 from autobahn.twisted.websocket import WebSocketServerProtocol, WebSocketServerFactory
-
 
 class MyServerProtocol(WebSocketServerProtocol):
 
@@ -22,7 +20,6 @@ class MyServerProtocol(WebSocketServerProtocol):
 
     def onClose(self, wasClean, code, reason):
         print("WebSocket connection closed: {0}".format(reason))
-
 
 if __name__ == '__main__':
     log.startLogging(sys.stdout)
